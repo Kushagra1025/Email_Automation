@@ -22,11 +22,11 @@ names=["Kushagra","Anshul","Shreyansh","Akshat"];
 
 
 # Sending a bulk of common emails
-email_functions.send_common_emails(recipient_emails, "Office of Dean, IIT Bombay", "Hi, I am willing to give you LOR for Kyoto Internship!!" )
+email_functions.send_common_emails(recipient_emails, "Test Email", "Hi, this is a test email" )
 
 
 # Sending a bulk of distinct emails
-email_functions.send_distinct_emails(recipient_emails,names,"Office of Dean, IIT Bombay")
+email_functions.send_distinct_emails(recipient_emails,names,"Test Email")
 
 
 # Establishing connection with Gmail
