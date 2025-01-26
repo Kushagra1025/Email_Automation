@@ -16,22 +16,22 @@ import main_file
 # print(s1)
 
 
-# # Defining recipient emails and recipient names
-# recipient_emails = ["emailfortesting1025@gmail.com", "kushagraofficialpurpose@gmail.com","10.feelatitspeak.25@gmail.com","emailforprivacy9@gmail.com"]
-# names=["Kushagra","Anshul","Shreyansh","Akshat"];
+# Defining recipient emails and recipient names
+recipient_emails = ["emailfortesting1025@gmail.com", "kushagraofficialpurpose@gmail.com","10.feelatitspeak.25@gmail.com","emailforprivacy9@gmail.com"]
+names=["Kushagra","Anshul","Shreyansh","Akshat"];
 
 
 # # Sending a bulk of common emails
 # email_functions.send_common_emails(recipient_emails, "Test Email", "Hi, this is a test email" )
 
 
-# # Sending a bulk of distinct emails
+# Sending a bulk of distinct emails
 # email_functions.send_distinct_emails(recipient_emails,names,"Test Invitation Email")
 
 
-# # Establishing connection with Gmail
-# imap=main_file.connect_to_imap("imap.gmail.com")
-# # Fetching emails from the desired folder
-# important_emails=main_file.fetch_emails(imap,"[Gmail]/Important")
-# # Moving the required email to the desired folder
-# main_file.move_email(imap,important_emails[0], "[Gmail]/Starred")
+# Establishing connection with Gmail
+imap=main_file.connect_to_imap("imap.gmail.com")
+# Fetching emails from the desired folder
+important_emails=main_file.fetch_emails(imap,"[Gmail]/Important")
+# Moving the required email to the desired folder
+main_file.move_email(imap,important_emails[0], "[Gmail]/Starred")
